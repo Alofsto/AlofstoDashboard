@@ -10,10 +10,10 @@ OFmenu.innnerHTML='
       <button class="ofbutton autoclickbutton" onclick="autoClicker()">Autoclicker</button>
       <!-- <button class="ofbutton autoscrollbutton" onclick="autoScroll();">Autoscroller</button> -->
       <hr class="divider">
-      <button class="ofbutton authorbutton" onclick="window.open('https://sites.google.com/view/foxdev/');">Made by FoxDev</button>
+      <button class="ofbutton authorbutton" onclick="window.open("https://sites.google.com/view/foxdev/");">Made by FoxDev</button>
       
       <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
         #OFmenu{position:fixed !important;width:10em;background:rgba(255, 255, 255, 0.84);backdrop-filter:blur(20px);left:10px;top:10px;padding:10px;padding-bottom:7px;border-radius:10px}
         #OFlogo{width:90%;height:auto;margin-bottom:10px !important}
         .ofbutton{margin-bottom:3px; font-size:0.8em;font-family:Poppins;border-radius:7px;width:100%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 1.4em;background-position: 0.2em center;text-indent: 1.7em;}
