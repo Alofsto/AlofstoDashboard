@@ -1,6 +1,6 @@
 var OFmenu = document.createElement('div');
 OFmenu.id='OFmenu';
-OFmenu.setAttribute('style', 'position:fixed !important;width:10em;background:rgba(255, 255, 255, 0.84);backdrop-filter:blur(20px);left:10px;top:10px;padding:10px;padding-bottom:7px;border-radius:10px;z-index:9999999998')
+OFmenu.setAttribute('style', 'box-sizing:unset !important; position:fixed !important;width:10em;background:rgba(255, 255, 255, 0.84);backdrop-filter:blur(20px);left:10px;top:10px;padding:10px;padding-bottom:7px;border-radius:10px;z-index:9999999998')
 document.body.appendChild(OFmenu);
 function createOfButton(title, lucideID, setOnClick){
   var createOfButton=document.createElement('button');
