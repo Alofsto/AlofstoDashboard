@@ -6,7 +6,7 @@ function createOfButton(title, lucideID, setOnClick){
   var createOfButton=document.createElement('button');
   createOfButton.setAttribute("class", "ofbutton");
   createOfButton.setAttribute("onClick", setOnClick);
-  createOfButton.style='z-index:9999999999;margin-bottom:3px; font-size:13px;font-family:Poppins;border-radius:7px;width:100%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 18px;background-position: 2px center;text-indent: 23px;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
+  createOfButton.style='z-index:9999999999;margin-bottom:3px; font-size:13px;font-family:Poppins;border-radius:7px;width:100%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 18px;background-position: 2px center;text-indent: 21px;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
   createOfButton.innerHTML=title;
   OFmenu.appendChild(createOfButton);
 }
