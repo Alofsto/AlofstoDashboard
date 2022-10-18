@@ -1,12 +1,12 @@
 var OFmenu = document.createElement('div');
 OFmenu.id='OFmenu';
-OFmenu.setAttribute('style', 'box-sizing:unset !important; position:fixed !important;width:10em;background:rgba(255, 255, 255, 0.84);backdrop-filter:blur(20px);left:10px;top:10px;padding:10px;padding-bottom:7px;border-radius:10px;z-index:9999999998')
+OFmenu.setAttribute('style', 'box-sizing:unset !important; position:fixed !important;width:180px;background:rgba(255, 255, 255, 0.84);backdrop-filter:blur(20px);left:10px;top:10px;padding:10px;padding-bottom:7px;border-radius:10px;z-index:9999999998')
 document.body.appendChild(OFmenu);
 function createOfButton(title, lucideID, setOnClick){
   var createOfButton=document.createElement('button');
   createOfButton.setAttribute("class", "ofbutton");
   createOfButton.setAttribute("onClick", setOnClick);
-  createOfButton.style='z-index:9999999999;margin-bottom:3px; font-size:0.8em;font-family:Poppins;border-radius:7px;width:100%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 1.4em;background-position: 0.2em center;text-indent: 1.7em;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
+  createOfButton.style='z-index:9999999999;margin-bottom:3px; font-size:13px;font-family:Poppins;border-radius:7px;width:100%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 18px;background-position: 2px center;text-indent: 23px;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
   createOfButton.innerHTML=title;
   OFmenu.appendChild(createOfButton);
 }
