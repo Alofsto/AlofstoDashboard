@@ -1,12 +1,12 @@
 var OFmenu = document.createElement('div');
 OFmenu.id='OFmenu';
-OFmenu.setAttribute('style', 'position:fixed !important;width:10em;background:rgba(255, 255, 255, 0.84);backdrop-filter:blur(20px);left:10px;top:10px;padding:10px;padding-bottom:7px;border-radius:10px;z-index:9999999998')
+OFmenu.setAttribute('style', 'position:fixed !important;width:150px;background:rgba(255, 255, 255, 0.84);backdrop-filter:blur(20px);left:10px;top:10px;padding:10px;padding-bottom:7px;border-radius:10px;z-index:9999999998')
 document.body.appendChild(OFmenu);
 function createOfButton(title, lucideID, setOnClick){
   var createOfButton=document.createElement('button');
   createOfButton.setAttribute("class", "ofbutton");
   createOfButton.setAttribute("onClick", setOnClick);
-  createOfButton.style='z-index:9999999999;margin-bottom:3px; font-size:0.8em;font-family:Poppins;border-radius:7px;width:100%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 1.4em;background-position: 0.2em center;text-indent: 1.7em;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
+  createOfButton.style='z-index:9999999999;margin-bottom:3px; font-size:13px;font-family:Poppins;border-radius:7px;width:100%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 1.4em;background-position: 0.2em center;text-indent: 1.7em;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
   createOfButton.innerHTML=title;
   OFmenu.appendChild(createOfButton);
 }
@@ -14,7 +14,7 @@ function createSOfButton(title, lucideID, setOnClick){
   var createOfButton=document.createElement('button');
   createOfButton.setAttribute("class", "ofbutton");
   createOfButton.setAttribute("onClick", setOnClick);
-  createOfButton.style='z-index:9999999999;margin-bottom:3px; font-size:0.8em;font-family:Poppins;border-radius:7px;width:49%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 1.4em;background-position: 0.2em center;text-indent: 1.7em;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
+  createOfButton.style='z-index:9999999999;margin-bottom:3px; font-size:13px;font-family:Poppins;border-radius:7px;width:49%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 1.4em;background-position: 0.2em center;text-indent: 1.7em;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
   createOfButton.innerHTML=title;
   OFmenu.appendChild(createOfButton);
 }
@@ -22,7 +22,7 @@ function createS2OfButton(title, lucideID, setOnClick){
   var createOfButton=document.createElement('button');
   createOfButton.setAttribute("class", "ofbutton");
   createOfButton.setAttribute("onClick", setOnClick);
-  createOfButton.style='z-index:9999999999;margin-left:3px;margin-bottom:3px; font-size:0.8em;font-family:Poppins;border-radius:7px;width:49%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 1.4em;background-position: 0.2em center;text-indent: 1.7em;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
+  createOfButton.style='z-index:9999999999;margin-left:3px;margin-bottom:3px; font-size:13px;font-family:Poppins;border-radius:7px;width:49%;background:rgba(255, 255, 255, 0.84);border:none;height:2em;text-align:left;background-repeat: no-repeat;background-size: 1.4em;background-position: 0.2em center;text-indent: 1.7em;background-image: url("https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/' + lucideID + '.svg")'
   createOfButton.innerHTML=title;
   OFmenu.appendChild(createOfButton);
 }
@@ -32,7 +32,7 @@ OFmenu.appendChild(PoppinsFont);
 
 var OFimg = document.createElement('img');
 OFimg.src='https://raw.githubusercontent.com/Alofsto/AlofstoDashboard/main/img/dashboard.png';
-OFimg.style='width:90%;height:auto;margin-bottom:10px !important';
+OFimg.style='width:90%;height:auto;margin-bottom:10px !important;font-size:13px !important';
 OFmenu.appendChild(OFimg);
 
 createOfButton('Embed', 'maximize', "var ofembed = document.createElement('iframe'); ofembed.id = 'ofEmbed'; ofembed.src='https://' + prompt('What site do you want to visit? (No https://)', '');ofembed.style='border-radius:10px;top:5%;left:5%;right:5%;bottom:5%;position:fixed;width:90%;height:90%;z-index:99999999999;border:unset;boxShadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px'; document.body.appendChild(ofembed);var closebutton = document.createElement('button');closebutton.id='closeOfEmbed';closebutton.style = 'position:fixed;right:2.5%;top:2.5%;z-index:999999999999;border:none;border-radius:10px;background-color:#ffffff;position:absolute;background-repeat:no-repeat;background-size:25px;background-position:center;width:30px;height:30px;background-image:url(https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/x.svg)';closebutton.onclick = function() {var rem = document.getElementById('ofEmbed'); rem.remove(); this.remove();};document.body.appendChild(closebutton);");
